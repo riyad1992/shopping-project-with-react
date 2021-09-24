@@ -1,0 +1,36 @@
+.product{
+    display: flex;
+    border-bottom: 1px solid rgba(192, 192, 197, 0.466);
+    margin-right: 5px;
+}
+.name{
+    color: rgb(71, 71, 247);
+    font-size: 18px;
+    font-weight: 400;
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    color: #3a3838;
+}
+.product-details{
+    margin-left: 10px;
+}
+.details{
+    display: flex;
+}
+.features{
+    margin-left: 50px;
+}
+.details button{
+    background-color: rgb(236, 173, 14);
+    color: #ffffff;
+    padding: 5px 50px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icon-star{
+    color: rgb(240, 175, 12);
+}

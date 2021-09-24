@@ -1,0 +1,41 @@
+.header{
+    text-align: center;
+}
+
+.header img{
+    height: 100px;
+}
+.header-menu{
+    background-color: rgb(37, 35, 35);
+    line-height: 40px;
+    text-align: left;
+}
+
+.menu{
+    margin-left: 50px;
+}
+.header-menu a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.header-menu a:hover{
+    background-color: rgb(143, 160, 175);
+    padding: 5px;
+}
+.search-field{
+    padding: 20px;
+}
+.search-field input{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.search-field button{
+    background-color: rgb(37, 35, 35);
+    font-size: 20px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}

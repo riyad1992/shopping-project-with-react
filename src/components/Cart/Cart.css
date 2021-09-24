@@ -1,0 +1,16 @@
+.cart{
+    text-align: center;
+}
+.cart-details{
+    display: flex;
+}
+.cart-calc{
+    margin-left: 10px;
+}
+
+.cart-details div{
+    line-height: 5px;
+}
+.grand-total{
+    color: rgb(216, 87, 87);
+}
