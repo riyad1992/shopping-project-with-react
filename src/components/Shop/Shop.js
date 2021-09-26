@@ -42,13 +42,13 @@ const Shop = () => {
     }, [products])
 
     const cartHandler = (product) => {
-        let istrue = false;
+        let istrue = true;
         for(const pro of cart){
             if(pro.key === product.key){
-                istrue = true;
+                istrue = false;
                 pro.quantity = pro.quantity +1;
             }
-            if(!istrue){
+            if(istrue){
                 const newCart = [...cart, product]
                 setCart(newCart)
             }else{

@@ -5,16 +5,19 @@ const Cart = (props) => {
     const {cart} = props
     let totalQuantity = 0
     let total = 0;
+    let shipping = 0;
+    // let shipping = cart.length === 0? 0 : 15;
     for(const product of cart){
         if(!product.quantity){
             product.quantity = 1;
         }
         total = total + product.price * product.quantity
         totalQuantity = totalQuantity + product.quantity
+        shipping = shipping + product.shipping * product.quantity
     }
     // const totalReducer = (prevuser, product) => prevuser + product.price;
     // const total = cart.reduce(totalReducer, 0)
-    const shipping = cart.length === 0? 0 : 15;
+    
     const totalBeforTax = shipping + total;
     const tax = totalBeforTax /10;
     const grandTotal = totalBeforTax + tax
