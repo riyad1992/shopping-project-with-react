@@ -3,6 +3,7 @@ import logo from '../../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
+import { Link } from 'react-router-dom';
 const Header = (props) => {
     const {cart} = props
     const element = <FontAwesomeIcon icon={faShoppingCart} />
@@ -20,9 +21,9 @@ const Header = (props) => {
                 <img src={logo} alt=''/>
                 <nav className='header-menu'>
                     <div className='menu'>
-                        <a href="/Shop">Shop</a>
-                        <a href="/Order">Order Review</a>
-                        <a href="/Inventory">Manage Inventory here</a>
+                        <Link to="/shop">Shop</Link>
+                        <Link to="/order">Order Review</Link>
+                        <Link to="/invantory">Manage Inventory here</Link>
                     </div>
                     <div className='search-field'>
                         <input onChange={props.handleSearch} type='text' placeholder='type here to search'/>

@@ -22,7 +22,7 @@
 .features{
     margin-left: 50px;
 }
-.details button{
+.btn-regular{
     background-color: rgb(236, 173, 14);
     color: #ffffff;
     padding: 5px 50px;

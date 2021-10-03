@@ -22,7 +22,7 @@ const Product = (props) => {
                         <p>by: {seller}</p>
                         <h4 className='price'>Price: $ {price}</h4>
                         <p>only {stock} left in stock - order soon</p>
-                        <button onClick={() => props.cartHandler(props.product)}>{element} Add To Cart</button>
+                        <button className='btn-regular' onClick={() => props.cartHandler(props.product)}>{element} Add To Cart</button>
                     </div>
                     <div className='features'>
                         <p><Rating 
